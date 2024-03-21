@@ -1,0 +1,57 @@
+ /*
+ Using editable data/nav.yml for navigation links
+ */
+ <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+     
+      {% for link in site.data.nav %}
+
+        {% if link.subcategories != null %}
+
+          <li class="nav-link menu__container more" id="menu__container">
+
+            <a href="#menu" id="menu__button" class="menu__button{% if page.url == link.href %} active{% endif %}">{{ link.title }}</a>
+
+            <div id="menuclick" class="menuclick">
+
+              <ul class="submenu">
+                {% assign count = 0 %}
+
+                {% for subcategory in link.subcategories %}
+
+                  {% if count == 0 or count == 10 %}
+                     <div class="column">
+                  {% endif %}
+
+                     <li><a href="{{ subcategory.subhref | prepend: site.baseurl }}" class="{% if page.url == link.href %}active{% endif %}">{{ subcategory.subtitle }} [{{count}}]</a></li>
+
+                  {% if count == 9 %}
+                    </div>
+                  {% endif %}
+
+                  {% assign count = count | plus: 1 %}
+
+                {% endfor %}
+              </ul>
+            </div>
+          </li>
+
+          {% else %}
+
+              <li class="nav-link{% if page.url == link.href %} active{% endif %}">
+                <a href="{{ link.href | prepend: site.baseurl }}">{{ link.title }}</a>
+              </li>
+
+          {% endif %}
+
+        {% endfor %}
+
+      </ul>
+    </nav>ul.submenu {
+    padding-left: 0;
+    @include outer-container;
+    @include media ($tablet) {
+        .column {
+            @include span-columns(6);
+        }
+    }
