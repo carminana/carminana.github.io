@@ -13,6 +13,7 @@ Tuesday - Biosafety lecture given by Per and presentations on backgrounds given 
 Wednesday - Documentation lecture and learning how to set up our own sites.
 
 Thursday - Continuation of documentation 
+
 **bold**
 
 [link to google](www.google.com)
