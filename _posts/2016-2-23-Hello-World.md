@@ -3,14 +3,16 @@ layout: post
 title: Carolina's Documentation
 ---
 
-# Week 1
+## Week 1 - Bioplastics, Biosafety + Documentation
 
-## Bioplastics, Biosafety + Documentation
 
 Monday - Introduction lecture given by Lucas, a quick tour around and a short workshop on simple bioplastic production.
+
 Tuesday - Biosafety lecture given by Per and presentations on backgrounds given by my peers and myself.
+
 Wednesday - Documentation lecture and learning how to set up our own sites.
 
+Thursday - Continuation of documentation 
 **bold**
 
 [link to google](www.google.com)
