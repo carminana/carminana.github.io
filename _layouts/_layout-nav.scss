@@ -1,9 +1,0 @@
-/* set up two columns for submenu */
-ul.submenu {
-    @include outer-container;
-    @include media ($tablet) {
-        .column {
-            @include span-columns(6);
-        }
-    }
-}
