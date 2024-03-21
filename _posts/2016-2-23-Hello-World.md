@@ -1,13 +1,15 @@
 ---
 layout: post
-title: Hello World
+title: Carolina's Documentation
 ---
 
-# Title
+# Week 1
 
-## Subtitle
+## Bioplastics, Biosafety + Documentation
 
-First post on my Github Jekyll page on the first day of the BioHack Academy
+Monday - Introduction lecture given by Lucas, a quick tour around and a short workshop on simple bioplastic production.
+Tuesday - Biosafety lecture given by Per and presentations on backgrounds given by my peers and myself.
+Wednesday - Documentation lecture and learning how to set up our own sites.
 
 **bold**
 
